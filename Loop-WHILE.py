@@ -1,4 +1,4 @@
-'''
+"""
 Loop while
 ----------
 - Estrutura de repeticao que permite executar um bloco de codigo enquanto
@@ -6,11 +6,11 @@ Loop while
 - Sintaxe:
 while (condicao):
     Bloco de codigo.
-'''
+"""
 contador = 1
 while (contador <= 9):
-    print('O valor do contador e %d' %contador)
-    contador+=1
+    print('O valor do contador e %d' % contador)
+    contador += 1
 print('Loop encerrado')
 
 # WHILE com variavel de controle
@@ -37,3 +37,9 @@ while (var > 0):
     if (var == 11):
         break
 print('Loop interrompido no valor %d' %var)
+
+# Criando um loop infinito
+while True:
+    comando = input("Digite 'sair' para sair.")
+    if comando == 'sair':
+        break
