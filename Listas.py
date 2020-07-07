@@ -3,12 +3,19 @@ LISTAS
 ------
 - Listas em Python funcionam como vetores/matrizes em outras linguagens, com a diferenca de serem DINAMICAS,
   e tambem podermos colocar QUALQUER tipo de objetos(strings, boolean, etc).
+
 - Uma lista pode conter outras listas como objetos.
+
 - Seu conteudo pode ser modificado - nao sao imutaveis como strings.
+
 - Seus objetos sao acessados a partir de um indice.
+
 - Suporta metodos que nao sao suportados pelas strings.
+
 - Listas sao representadas por colchetes []
+
 """
+import math
 
 # Criar listas
 L = []
@@ -22,11 +29,11 @@ L = ["a", ["b", "c"]]
 L1 = [0, 1, 2, 3, 4]
 L2 = [5, 6, 7, 8, 9]
 L3 = L1 + L2
-print(L1 + L2)
+print('L1 + L2:', L1 + L2)
 
 # L * 5     Repeticao
 L = [1, 2, 3]
-print(L * 5)
+print('L * 5:', L * 5)
 
 # <valor> in L      Verificacao de existencia
 if 2 in L:
@@ -36,6 +43,8 @@ else:
 
 # L.append(x)       Acrescentar itens
 L = [1, 2, 3, 7]
+print(L)
+L.append(9)
 print(L)
 
 #  L.insert(POS,x)    Acrescentar item na posicao especificada. Nao substitui o valor inicial,
@@ -69,7 +78,7 @@ print(L)
 print("**********************************************")
 
 # L2 = [x+n for x in L] Criar a lista L2 com os elementos de L
-#                       inclrementados em n
+#                       incrementados em n
 #                       Pode ser qualquer outro calculo
 L = [5, 7, 9, 12, 15, 25]
 print(L)
@@ -90,6 +99,15 @@ L3 = [math.sqrt(x) for x in L2]
 print(L3)
 print("**********************************************")
 
+# Desempacotamento de listas
+# A quantidade de variáveis devem ser iguais à quantidade de elementos da lista
+print('Desempacotamento de listas')
+lista = [1, 2, 3]
+
+num1, num2, num3 = lista
+
+print(num1, num2, num3)
+print("**********************************************")
 # Metodos suportados por listas
 
 # L.sort()      Ordenar listas
