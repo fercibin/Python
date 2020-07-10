@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-'''
+"""
 FUNCOES
 -------
 - Uma funcao e um agrupamento de instrucoes que podem ser executadas mais
@@ -9,20 +9,27 @@ FUNCOES
   Reutilizacao de codigo
   Modularizacao
 
-Criando Funcoes sem argumentos
+A diferença entre parâmetros e argumentos:
+------------------------------------------
+- Parâmetros são variáveis declaradas na definição de uma função.
+
+- Argumentos são dados passados durante a execução de uma função
+
+
+Criando Funcoes sem parâmetros
 ------------------------------
 - Sintaxe
-def <nome_funcao>(argumentos):
+def <nome_funcao>(parâmetros):
     <instrucoes>
 
 Exemplo: funcao para exibir uma mensagem
 def mensagem():
     print('Primeira funcao.')
 
-Criando Funcoes com argumentos
+Criando Funcoes com parâmetros
 ------------------------------
 -Sintaxe
-def <nome_funcao>(argumentos):
+def <nome_funcao>(parâmetros):
     <instrucoes>
 
 Exemplo: funcao para somar dois numeros
@@ -38,10 +45,12 @@ def <nome_funcao>(argumentos):
 - A instrucao return pode ser declarada em qualquer parte dentro de codigo
   da funcao. Quando executada, finaliza a chamada da funcao e retorna o
   resultado de volta a quem fez a chamada.
+
 - Trata-se de uma instrucao opcional, caso nao seja utilizada, a funcao
   termina quando finalizar a execucao das instrucoes da funcao.
 
-'''
+"""
+
 def mensagem():
     print('Teste primeira funcao')
 mensagem()
