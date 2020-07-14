@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-'''
+"""
 FUNCOES - Escopos de Variaveis
 ------------------------------
 - O escopo de uma variavel define sua visibilidade-onde, no codigo, a
@@ -19,7 +19,7 @@ FUNCOES - Escopos de Variaveis
   - Variaveis globais tbm podem ser acessadas por outros modulos, caso eles
     importem o modulo onde a variavel foi definida.
 
-'''
+"""
 VAR_GLOBAL = 'Curso de Python'
 def escreve_texto():
     VAR_GLOBAL = 'Planeta Linux'

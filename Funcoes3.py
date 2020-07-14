@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-'''
+"""
 FUNCOES
 -------
 Parametros Opcionais e Obrigatorios
@@ -8,7 +8,7 @@ Parametros Opcionais e Obrigatorios
   passados, a funcao usa o valor padrao declarado na funcao.
 - Se nenhum valor fosse declarado como padrao, a passagem dos parametros
   se tornaria obrigatoria.
-'''
+"""
 def contar(valor=11, caractere = "+"):
     for i in range (1, valor):
         print(caractere)

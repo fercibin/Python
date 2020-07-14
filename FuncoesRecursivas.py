@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-'''
+"""
 FUNCOES RECURSIVAS
 ------------------
 - Recursao e um metodo de simplificacao que consiste em dividir um
@@ -21,7 +21,7 @@ Fatorial de 4 (4!):
 4*3*fatorial(2)=
 4*3*2*fatorial(1)=
 4*3*2*1 = 24
-'''
+"""
 def fatorial(numero):
     if numero == 0 or numero == 1:
         return 1
