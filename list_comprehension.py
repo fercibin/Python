@@ -39,4 +39,13 @@ print(pares)
 print(impares)
 
 
+# Pegar os valores divisíveis por 3 e por 8 numa lista
+
+lista = list(range(100))
+div3_8 = [v for v in lista if v % 3 == 0 and v % 8 == 0]
+print(div3_8)
+
+# Usando ELSE - No exemplo abaixo, vai colocar / nos lugares dos números que não forem divisíveis por  3 e 8
+ex7 = [v if v % 3 == 0 and v % 8 == 0 else '/' for v in lista]
+print(ex7)
 
