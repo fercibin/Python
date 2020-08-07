@@ -1,9 +1,14 @@
 """
 Módulo Collections - Deque
 
-Deque é uma lista de alta performance.
+FILA (queue) - FIFO - Fist in, first out
+- O primeiro elemento a entrar é o primeiro a sair
+
+Deque é uma FILA de alta performance.
+
 """
 from collections import deque
+from time import sleep
 
 # Criando
 deq = deque('Fernando')
@@ -24,3 +29,11 @@ print(deq)  # Remove do final
 print(deq.popleft())  # Remove do início
 print(deq)
 
+# Exemplo em que mostra o primeiro elemento sendo substituído
+
+fila = deque(maxlen=10)
+
+for i in range(100):
+    fila.append(i)
+    sleep(.5)
+    print(fila)
